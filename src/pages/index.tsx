@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { JSX, SVGProps } from "react";
 
 export default function Home() {
   return (
@@ -40,7 +41,7 @@ export default function Home() {
                 </span>
               </h1>
               <p className="text-lg">
-                I'm a software developer who loves to code, play retro video
+                I m a software developer who loves to code, play retro video
                 games, and collect rare Pepes. My skills include C++,
                 JavaScript, and Brainfuck. I also have a black belt in
                 recursion.
@@ -54,7 +55,6 @@ export default function Home() {
               <img
                 src="/placeholder.svg"
                 alt="Avatar"
-                fill
                 className="object-contain"
               />
             </div>
@@ -173,7 +173,7 @@ export default function Home() {
   );
 }
 
-function GithubIcon(props) {
+function GithubIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -193,7 +193,9 @@ function GithubIcon(props) {
   );
 }
 
-function InstagramIcon(props) {
+function InstagramIcon(
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) {
   return (
     <svg
       {...props}
@@ -214,7 +216,9 @@ function InstagramIcon(props) {
   );
 }
 
-function LinkedinIcon(props) {
+function LinkedinIcon(
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) {
   return (
     <svg
       {...props}
@@ -235,7 +239,7 @@ function LinkedinIcon(props) {
   );
 }
 
-function MenuIcon(props) {
+function MenuIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -256,7 +260,7 @@ function MenuIcon(props) {
   );
 }
 
-function TwitterIcon(props) {
+function TwitterIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
