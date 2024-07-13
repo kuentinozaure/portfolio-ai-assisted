@@ -10,12 +10,12 @@ export default function Home() {
   return (
     <div className="bg-[#0f0f0f] text-[#8cc2ff] font-mono">
       <header className="flex items-center justify-between px-6 py-4 bg-[#1a1a1a] border-b border-[#2b2b2b]">
-        <Link href="#" className="flex items-center gap-2" prefetch={false}>
+        <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-[#8cc2ff] rounded-md flex items-center justify-center text-[#0f0f0f] font-bold text-xl">
             KZ
           </div>
           <span className="text-xl font-bold">Kuentinozaure</span>
-        </Link>
+        </div>
       </header>
       <main>
         <section className="px-6 py-12 md:py-24 bg-[#1a1a1a] border-b border-[#2b2b2b]">
@@ -36,10 +36,6 @@ export default function Home() {
                 native, Swift, Java / Kotlin), Javascript and his child (👀
                 Typescript), Java and all the language.
               </p>
-              <div className="flex gap-4">
-                <Button>Hire Me</Button>
-                <Button variant="outline">Want a dinosaure pics ?</Button>
-              </div>
             </div>
             <div className="relative w-full h-[100px] md:h-[200px]">
               <Image
@@ -150,6 +146,7 @@ export default function Home() {
               href="https://github.com/kuentinozaure"
               className="hover:underline"
               prefetch={false}
+              target="_blank"
             >
               <GithubIcon className="w-6 h-6" />
             </Link>
@@ -158,6 +155,7 @@ export default function Home() {
               href="https://www.linkedin.com/in/aubry-quentin/"
               className="hover:underline"
               prefetch={false}
+              target="_blank"
             >
               <LinkedinIcon className="w-6 h-6" />
             </Link>
